@@ -15,8 +15,8 @@ public interface BlogRepository extends JpaRepository<Blog,Long>, JpaSpecificati
     //JpaSpecificationExecutor<Blog> 封装了联合查询 方法
     Blog findByTitleLessThanEqual(String title);
 
-    //发送 博客一页数据
-    @Query("select b from Blog b where b.recommend = true")
+    //发送 发布的博客一页数据
+    @Query("select b from Blog b where b.recommend = true and b.published = true")
     List<Blog> findTop(Pageable pageable);
 
     //利用查找条件 全局搜索 博客
@@ -38,8 +38,8 @@ public interface BlogRepository extends JpaRepository<Blog,Long>, JpaSpecificati
     @Query("select b from Blog b where function('date_format',b.updateTime,'%Y') = ?1")
     List<Blog> findByYear(String year);
 
-    //发送size大小 推荐博客数据
-    @Query(nativeQuery = true,value = "select * from t_blog  where recommend = true  order by update_time DESC limit ?")
+    //发送size大小 推荐并且发布的博客数据
+    @Query(nativeQuery = true,value = "select * from t_blog  where published = true and recommend = true  order by update_time DESC limit ?")
     List<Blog> findsize(int size);
 
     //查询分页发布的博客
