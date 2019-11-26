@@ -1,0 +1,5 @@
+2019-10-25 18:02:41.408  INFO 8080 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 8080 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-25 18:02:41.424  INFO 8080 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: pro
+2019-10-25 18:02:58.294  WARN 8080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-25 18:02:58.792  WARN 8080 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-25 18:02:59.018  INFO 8080 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 18.705 seconds (JVM running for 20.539)

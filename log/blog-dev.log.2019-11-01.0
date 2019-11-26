@@ -1,0 +1,111 @@
+2019-11-01 08:47:16.581  INFO 12040 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 12040 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-11-01 08:47:16.617 DEBUG 12040 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-01 08:47:16.617  INFO 12040 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-11-01 08:47:16.790  INFO 12040 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-01 08:47:16.791  INFO 12040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-01 08:47:16.792  INFO 12040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-01 08:47:20.003  INFO 12040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-01 08:47:20.158  INFO 12040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 5 repository interfaces.
+2019-11-01 08:47:21.475  INFO 12040 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-01 08:47:24.073  INFO 12040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-01 08:47:24.166  INFO 12040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-01 08:47:24.168  INFO 12040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-01 08:47:24.588  INFO 12040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-01 08:47:24.589  INFO 12040 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7797 ms
+2019-11-01 08:47:25.955  INFO 12040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-01 08:47:26.386  INFO 12040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-01 08:47:27.107  INFO 12040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-01 08:47:27.376  INFO 12040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-01 08:47:32.770  INFO 12040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-01 08:47:32.844  INFO 12040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-01 08:47:37.592  INFO 12040 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-01 08:47:37.627  INFO 12040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-01 08:47:37.675  INFO 12040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-01 08:47:40.305  WARN 12040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-01 08:47:42.941  INFO 12040 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-01 08:47:43.395  INFO 12040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-01 08:47:44.711  INFO 12040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-01 08:47:44.745  INFO 12040 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 31.418 seconds (JVM running for 37.791)
+2019-11-01 08:49:25.170  INFO 12040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-01 08:49:25.170  INFO 12040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-01 08:49:25.201  INFO 12040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2019-11-01 08:50:21.560  INFO 12040 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs;jsessionid=9F4B6DBC3A84FB42452AA024E1EA2729
+2019-11-01 08:50:22.533  INFO 12040 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:50:22.650  INFO 12040 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:50:32.052  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs/21/input
+2019-11-01 08:50:32.588  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:50:32.816  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:51:37.945  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:51:41.096  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:51:41.365  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:51:41.387  INFO 12040 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:51:41.414  INFO 12040 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:51:41.453  INFO 12040 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:51:53.916  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs/21/input
+2019-11-01 08:51:53.942  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:51:54.012  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:52:22.261  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:52:22.450  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:52:22.452  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:52:22.524  INFO 12040 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:52:22.557  INFO 12040 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:52:22.590  INFO 12040 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:53:40.435  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:53:40.547  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:53:40.631  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:53:45.082  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs/21/input
+2019-11-01 08:53:45.103  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:53:45.258  INFO 12040 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:54:15.389  INFO 12040 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:54:15.854  INFO 12040 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:54:15.856  INFO 12040 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:54:15.878  INFO 12040 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:54:15.951  INFO 12040 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:54:16.017  INFO 12040 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:54:23.659  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs/21/input
+2019-11-01 08:54:32.230  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:54:32.505  INFO 12040 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:54:49.957  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-11-01 08:54:49.990  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-11-01 08:54:50.012  INFO 12040 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-11-01 08:55:15.967  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2019-11-01 08:55:16.299  WARN 12040 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-01 08:55:16.644  WARN 12040 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-01 08:55:16.728  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:55:16.743  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Result: index
+2019-11-01 08:55:28.349  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/blog/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.blog', args=[21, {}]}
+2019-11-01 08:55:29.347  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:55:29.347  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : Result: blog
+2019-11-01 08:55:32.526  INFO 12040 --- [http-nio-8080-exec-4] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:55:34.054  INFO 12040 --- [http-nio-8080-exec-4] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:55:34.055  INFO 12040 --- [http-nio-8080-exec-4] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList
+2019-11-01 08:55:59.953  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.postComment', args=[Comment{id=null, adminComment=false, nickname='向星豪', email='1347986297@qq.com', content='这是管理员的回复', avatar='null', creatTime=null, replyComments=[], parentComment=Comment{id=30, adminComment=false, nickname='null', email='null', content='null', avatar='null', creatTime=null, replyComments=[], parentComment=null, blog=null}, blog=Blog{id=21, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, description='null', tagIds='null', creatTime=null, updateTime=null, type=null, tags=[], user=null, comments=[]}}, org.apache.catalina.session.StandardSessionFacade@156c314f]}
+2019-11-01 08:56:01.023  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:56:01.024  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Result: redirect:/comments/21
+2019-11-01 08:56:01.125  INFO 12040 --- [http-nio-8080-exec-5] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:56:01.146  INFO 12040 --- [http-nio-8080-exec-5] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:56:01.147  INFO 12040 --- [http-nio-8080-exec-5] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList
+2019-11-01 08:57:07.524  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/blog/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.blog', args=[21, {}]}
+2019-11-01 08:57:07.580  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:07.581  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Result: blog
+2019-11-01 08:57:11.972  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:57:12.018  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:12.019  INFO 12040 --- [http-nio-8080-exec-9] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList
+2019-11-01 08:57:17.245  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/blog/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.blog', args=[21, {}]}
+2019-11-01 08:57:17.958  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:17.958  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Result: blog
+2019-11-01 08:57:21.831  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:57:21.855  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:21.856  INFO 12040 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList
+2019-11-01 08:57:34.896  INFO 12040 --- [http-nio-8080-exec-8] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/blog/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.blog', args=[21, {}]}
+2019-11-01 08:57:34.962  INFO 12040 --- [http-nio-8080-exec-8] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:34.962  INFO 12040 --- [http-nio-8080-exec-8] com.xxh.blog.aspect.LogAspect            : Result: blog
+2019-11-01 08:57:35.788  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:57:35.817  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:57:35.817  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList
+2019-11-01 08:58:09.297  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/blog/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.blog', args=[21, {}]}
+2019-11-01 08:58:09.310  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:58:09.310  INFO 12040 --- [http-nio-8080-exec-7] com.xxh.blog.aspect.LogAspect            : Result: blog
+2019-11-01 08:58:11.037  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/comments/21', ip='127.0.0.1', classMethod='com.xxh.blog.controller.CommentController.comments', args=[21, {}]}
+2019-11-01 08:58:11.060  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-11-01 08:58:11.064  INFO 12040 --- [http-nio-8080-exec-3] com.xxh.blog.aspect.LogAspect            : Result: blog :: commentList

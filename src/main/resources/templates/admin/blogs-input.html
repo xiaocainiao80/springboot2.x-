@@ -1,0 +1,313 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--加载响应式交互-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客发布</title>
+    <link rel="stylesheet" href="../../static/css/xxh.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+    <!--引入edidormd的css样式-->
+    <link rel="stylesheet" href="../../static/lib/Editor/css/editormd.min.css">
+
+</head>
+<body>
+<!--导航-->
+<nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+
+            <div class="right menu m-item m-mobile-hide">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="../../static/images/name.jpg" class="ui mini rounded image" >
+                        向星豪
+                    </div>
+                    <i class="dropdown icon "></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--加图标-->
+    <!--手机端点击显示隐藏域-->
+    <a  href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="m-mobile-show sidebar icon"></i>
+    </a>
+</nav>
+<!--二级导航-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+            <a href="#" th:href="@{/admin/blogs}" class="teal active item">列表</a>
+        </div>
+    </div>
+</div>
+
+<!--中间内容-->
+<div class="m-padded-tb-big m-container">
+    <div class="ui container">
+        <form id="blog-form" th:object="${blog}" action="#" th:action="@{/admin/blogs}" method="post" class="ui form">
+            <!--是否公开的隐藏域-->
+            <input type="hidden" name="published" >
+            <!--修改博客的id-->
+            <input type="hidden" name="id" th:value="*{id}" />
+            <!--标题和下拉框-->
+            <div class="required field">
+                <div class="ui left labeled input">
+                    <div class="ui selection compact teal basic dropdown label">
+                        <input type="hidden" value="原创" name="flag" th:value="*{flag}" />
+                        <i class="dropdown icon"></i>
+                        <div class="text">原创</div>
+                        <div class="menu">
+                            <div class="item" data-value="原创">原创</div>
+                            <div class="item" data-value="转载">转载</div>
+                            <div class="item" data-value="翻译">翻译</div>
+                        </div>
+                    </div>
+                    <input type="text" name="title" placeholder="标题" th:value="*{title}" />
+                </div>
+            </div>
+            <!--内容-->
+            <div class="required field">
+                <div id="md-content" style="z-index: 1 !important;">
+                    <textarea placeholder="博客内容" name="content" style="display: none"
+                    th:text="*{content}!=null ? *{content}">
+
+                    </textarea>
+                </div>
+            </div>
+
+            <!--分类和标签下拉框选择-->
+            <div class="two fields">
+                <div class="required field">
+                    <div class="ui left labeled input">
+                        <label class="ui compact teal basic label">分类</label>
+                        <div class="ui fluid selection dropdown">
+                            <input type="hidden" name="type.id" th:value="*{type}!=null ? *{type.id}"/>
+                            <i class="dropdown icon">
+                            </i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div th:each="type : ${types}" class="item" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
+                                <!--/*
+                                <div class="item" data-value="2">开发者手册</div>
+                                */-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left labeled input">
+                        <label class="ui compact teal basic label">标签</label>
+                        <div class="ui tag fluid selection  multiple search dropdown">
+                            <!--隐藏标签id-->
+                            <input type="hidden" name="tagIds" th:value="*{tagIds}" />
+                            <i class="dropdown icon">
+                            </i>
+                            <div class="default text">标签</div>
+                            <div class="menu">
+                                <div th:each="tag : ${tags}" th:text="${tag.name}" class="item" th:data-value="${tag.id}">java</div>
+                                <!--/*/
+                                <div class="item" data-value="2">javaScropt</div>
+                                /*/-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--首图引用地址-->
+            <div class="required field">
+                <div class="ui left labeled input">
+                    <label class="ui  teal basic label">首图</label>
+                    <input type="text" placeholder="首图引用地址" name="firstPicture" th:value="*{firstPicture}" />
+                </div>
+            </div>
+            <!--博客描述-->
+            <div class="required field">
+                <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+            </div>
+
+            <!--开启推荐，转载声明，赞赏，评论的选择-->
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend" checked th:checked="*{recommend}" class="hidden"/>
+                        <label for="recommend">推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="shareStatement" name="shareStatement" class="hidden"
+                        th:checked="*{shareStatement}"/>
+                        <label for="shareStatement">转载声明</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="appreciation" name="appreciation" class="hidden"
+                               th:checked="*{shareStatement}"/>
+                        <label for="appreciation">赞赏</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="commentabled" name="commentabled" class="hidden"
+                               th:checked="*{commentabled}"/>
+                        <label for="commentabled">评论</label>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--处理出错信息-->
+            <div class="ui error message"></div>
+
+            <!--发布，保存或者返回-->
+            <div class="ui right aligned container">
+                <button type="button" class="ui button" onclick="window.history.go(-1)" >返回</button>
+                <button type="button" id="save-btn" class="ui secondary button">保存</button>
+                <button type="button" id="published-btn" class="ui teal button">发布</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+    <br/>
+    <br/>
+<!--底部footer-->
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column" >
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 120px;height: 100px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column" >
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="" class="item">用户故事</a>
+                    <a href="" class="item">用户故事</a>
+                    <a href="" class="item">用户故事</a>
+                </div>
+            </div>
+            <div class="three wide column" >
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email：1347986297@qq.com</a>
+                    <a href="#" class="item">QQ：1347986297</a>
+                    <!--<a href="#" class="item">用户故事</a>-->
+                </div>
+            </div>
+            <div class="seven wide column" >
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，主要用来分享关于编程技术，写作，电视电影，生活相关的内容，希望可以对来到这里的人有所帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright @2019-2020 XXH Designed By XXH</p>
+    </div>
+</footer>
+
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script src="../../static/lib/Editor/js/editormd.min.js" th:src="@{/lib/Editor/js/editormd.min.js}"></script>
+<script>
+    //    mrkdown的js响应 初始化markdown
+    var testEditor;
+    $(function () {
+        testEditor = editormd("md-content",{
+            width:"100%",
+            height:640,
+            syncScrolling:"single",
+            path:"/static/lib/Editor/lib/",
+            imageUpload : true,
+            imageFormats : [ "jpg", "jpeg", "gif", "png", "bmp", "webp" ],
+            imageUploadURL : "/admin/uploadfile"
+        })
+    });
+
+    $('.menu.toggle').click(function () {
+    //    yongclass样式获取隐藏域内容
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on:'hover'
+    });
+
+    //自定义标签
+    $('.ui.tag.dropdown').dropdown({
+       allowAdditions:true
+    });
+//    表单验证
+    $('.ui.form').form({
+        fields:{
+            title:{
+                identifier:'title',
+                rules:[{
+                    type:'empty',
+                    prompt:'请输入博客标题'
+                }]
+            },
+            content:{
+                identifier: 'content',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请输入博客内容'
+                }]
+            },
+            typeId:{
+                identifier: 'type.id',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请选择分类'
+                }]
+            },
+            firstPicture:{
+                identifier: 'firstPicture',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请输入首图地址'
+                }]
+            },
+            description:{
+                identifier: 'description',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请输入博客描述'
+                }]
+            }
+        }
+    });
+
+
+    //响应 保存  给published赋值为false
+    $('#save-btn').click(function () {
+       $("[name='published']").val(false);
+       //提交form 表单
+        $("#blog-form").submit();
+    });
+    //响应 发布 也就使公开
+    $('#published-btn').click(function () {
+        $("[name='published']").val(true);
+        //提交form 表单
+        $("#blog-form").submit();
+    });
+</script>
+</body>
+</html>

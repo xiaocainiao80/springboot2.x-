@@ -1,0 +1,1399 @@
+2019-10-27 12:30:21.715  INFO 3416 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3416 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 12:30:21.753 DEBUG 3416 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 12:30:21.753  INFO 3416 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 12:30:22.163  INFO 3416 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 12:30:22.163  INFO 3416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 12:30:22.163  INFO 3416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 12:30:27.929  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 12:30:28.474  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 416ms. Found 1 repository interfaces.
+2019-10-27 12:30:30.435  INFO 3416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 12:30:32.909  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 12:30:33.030  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 12:30:33.030  INFO 3416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 12:30:33.588  INFO 3416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 12:30:33.593  INFO 3416 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11430 ms
+2019-10-27 12:30:35.485  INFO 3416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 12:30:36.183  INFO 3416 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 12:30:39.487  INFO 3416 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 12:30:40.285  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 12:30:47.488  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 12:30:47.666  INFO 3416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 12:31:03.823  INFO 3416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 12:31:03.873  INFO 3416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 12:31:03.996  INFO 3416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 12:31:07.348  WARN 3416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 12:31:08.274  INFO 3416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 12:31:08.779  INFO 3416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 12:31:11.964  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 12:31:11.998  INFO 3416 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 55.92 seconds (JVM running for 60.036)
+2019-10-27 12:31:45.156  INFO 3416 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 12:31:45.157  INFO 3416 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 12:31:45.176  INFO 3416 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-10-27 12:31:45.380  INFO 3416 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.index', args=[]}
+2019-10-27 12:31:45.403  INFO 3416 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-10-27 12:31:45.403  INFO 3416 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Result: index
+2019-10-27 12:32:14.603  INFO 3416 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/index
+2019-10-27 12:32:14.604  INFO 3416 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:32:38.000  INFO 3416 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/login
+2019-10-27 12:32:38.002  INFO 3416 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:33:27.861  INFO 3416 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/login
+2019-10-27 12:33:27.862  INFO 3416 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:34:17.334  INFO 3416 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/login
+2019-10-27 12:34:17.334  INFO 3416 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:37:33.252  INFO 3416 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/login
+2019-10-27 12:37:33.253  INFO 3416 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:42:08.077  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 11624 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 12:42:08.081 DEBUG 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 12:42:08.081  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 12:42:08.243  INFO 11624 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 12:42:08.243  INFO 11624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 12:42:08.243  INFO 11624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 12:42:11.249  INFO 11624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 12:42:11.465  INFO 11624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175ms. Found 1 repository interfaces.
+2019-10-27 12:42:12.797  INFO 11624 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 12:42:15.322  INFO 11624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 12:42:15.368  INFO 11624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 12:42:15.368  INFO 11624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 12:42:15.703  INFO 11624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 12:42:15.707  INFO 11624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7464 ms
+2019-10-27 12:42:17.143  INFO 11624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 12:42:17.818  INFO 11624 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 12:42:21.407  INFO 11624 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 12:42:21.885  INFO 11624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 12:42:24.680  INFO 11624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 12:42:24.866  INFO 11624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 12:42:36.780  INFO 11624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 12:42:36.832  INFO 11624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 12:42:36.918  INFO 11624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 12:42:41.185  WARN 11624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 12:42:41.926  INFO 11624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 12:42:42.549  INFO 11624 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 12:42:43.792  INFO 11624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 12:42:43.795  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 38.85 seconds (JVM running for 42.114)
+2019-10-27 12:42:51.342  INFO 11624 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 12:42:51.342  INFO 11624 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 12:42:51.358  INFO 11624 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-10-27 12:42:51.402  INFO 11624 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.index', args=[]}
+2019-10-27 12:42:51.409  INFO 11624 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-10-27 12:42:51.409  INFO 11624 --- [http-nio-8080-exec-2] com.xxh.blog.aspect.LogAspect            : Result: index
+2019-10-27 12:44:35.713  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/index
+2019-10-27 12:44:35.713  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.735  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.735  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.760  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.760  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.774  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.775  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.785  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.785  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.799  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.799  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.811  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.812  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.824  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.824  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.836  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.836  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.847  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.847  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.862  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.862  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.874  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.875  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.884  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.885  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.897  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.897  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.909  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.909  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.929  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.929  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.961  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.961  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.970  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.970  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.983  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.984  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:35.992  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:35.993  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.542  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.544  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.562  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.563  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.572  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.572  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.582  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.582  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.589  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.590  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.597  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.597  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.602  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.602  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.607  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.609  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.614  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.614  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.618  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.618  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.623  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.623  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.631  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.631  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.650  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.651  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.656  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.657  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.663  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.663  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.668  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.669  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.676  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.676  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.683  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.683  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.689  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.689  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:38.694  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:38.695  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.812  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.812  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.829  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.829  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.839  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.840  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.846  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.846  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.853  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.853  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.862  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.862  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.870  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.871  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.879  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.879  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.887  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.887  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.895  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.896  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.903  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.903  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.909  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.909  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.914  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.915  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.921  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.921  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.926  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.927  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.934  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.934  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.939  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.939  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.944  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.945  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.956  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.956  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.963  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.963  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.967  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.967  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.972  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.972  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:43.977  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:43.977  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.065  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.065  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.080  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.080  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.122  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.123  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.132  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.132  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.140  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.141  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.147  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.147  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.159  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.159  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.166  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.166  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.173  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.173  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.179  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.180  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.185  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.185  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.193  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.193  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.198  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.199  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.205  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.205  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:44:44.211  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:44:44.211  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.762  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/index
+2019-10-27 12:45:06.763  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.770  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.770  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.779  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.779  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.829  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.830  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.835  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.835  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.842  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.843  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.847  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.848  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.853  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.882  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.890  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.890  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.897  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.897  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.904  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.905  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.909  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.910  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.919  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.919  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.934  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.934  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.946  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.946  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.952  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.953  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.961  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.961  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.967  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.967  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:06.991  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:06.991  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.006  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.007  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.395  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.396  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.403  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.403  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.416  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.416  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.428  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.428  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.435  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.435  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.442  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.442  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.447  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.447  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.452  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.452  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.459  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.459  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.462  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.463  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.467  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.467  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.472  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.472  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.477  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.477  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.483  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.483  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.488  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.488  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.493  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.493  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.521  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.521  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.527  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.527  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.532  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.532  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:07.539  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:07.539  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.583  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.583  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.596  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.596  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.607  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.607  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.613  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.614  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.619  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.619  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.626  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.626  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.631  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.631  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.640  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.640  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.644  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.644  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.655  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.656  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.668  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.670  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.676  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.676  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.679  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.679  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.695  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.695  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.697  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.701  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.703  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.703  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.714  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.715  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.721  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.721  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.729  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.729  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:12.735  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:12.735  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.796  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.797  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.807  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.807  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.820  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.820  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.831  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.832  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.845  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.845  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.860  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.861  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.879  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.880  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.900  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.900  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.919  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.919  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.926  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.926  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.938  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.939  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.949  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.950  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.959  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.959  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.971  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.972  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.978  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.978  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:42.990  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:42.990  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:43.005  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:43.006  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:43.015  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:43.015  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:43.021  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:43.021  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:43.029  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:43.030  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.170  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.170  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.188  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.188  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.195  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.195  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.201  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.201  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.240  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.240  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.255  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.259  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.272  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.272  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.473  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.473  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.491  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.491  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.641  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.641  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.653  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.653  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.661  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.661  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.668  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.669  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.672  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.672  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.685  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.685  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.700  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.700  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.717  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.717  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.785  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.785  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.813  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.814  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:55.822  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:55.822  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.340  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.340  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.352  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.352  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.359  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.359  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.364  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.364  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.371  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.371  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.376  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.376  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.382  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.382  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.388  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.388  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.393  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.393  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.399  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.399  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.405  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.405  INFO 11624 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.410  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.410  INFO 11624 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.420  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.420  INFO 11624 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.428  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.428  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.440  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.440  INFO 11624 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.446  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.446  INFO 11624 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.462  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.462  INFO 11624 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.468  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.468  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.475  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.475  INFO 11624 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.481  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin
+2019-10-27 12:45:57.481  INFO 11624 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:45:57.736  INFO 11624 --- [Thread-63] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 12:45:57.738  INFO 11624 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 12:45:57.838  INFO 11624 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-27 12:45:57.851  INFO 11624 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-27 12:45:58.803  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 11624 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 12:45:58.803 DEBUG 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 12:45:58.803  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 12:45:59.204  INFO 11624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 12:45:59.212  INFO 11624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 1 repository interfaces.
+2019-10-27 12:45:59.270  INFO 11624 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 12:45:59.350  WARN 11624 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 12:45:59.410  INFO 11624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 12:45:59.410  INFO 11624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 12:45:59.411  INFO 11624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 12:46:00.094  INFO 11624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 12:46:00.095  INFO 11624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1107 ms
+2019-10-27 12:46:00.280  INFO 11624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 12:46:00.288  INFO 11624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-27 12:46:01.514  INFO 11624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-27 12:46:01.514  INFO 11624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 12:46:02.894  INFO 11624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 12:46:02.896  INFO 11624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 12:46:02.911  INFO 11624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 12:46:03.228  WARN 11624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 12:46:03.471  INFO 11624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 12:46:03.526  INFO 11624 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 12:46:03.906  INFO 11624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 12:46:03.910  INFO 11624 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 5.147 seconds (JVM running for 242.228)
+2019-10-27 12:46:03.911  INFO 11624 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 12:46:24.472  INFO 11624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 12:46:24.473  INFO 11624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 12:46:24.484  INFO 11624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-27 12:46:24.492  INFO 11624 --- [http-nio-8080-exec-1] com.xxh.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.xxh.blog.controller.indexController.index', args=[]}
+2019-10-27 12:46:24.497  INFO 11624 --- [http-nio-8080-exec-1] com.xxh.blog.aspect.LogAspect            : -----doAfter-----
+2019-10-27 12:46:24.497  INFO 11624 --- [http-nio-8080-exec-1] com.xxh.blog.aspect.LogAspect            : Result: index
+2019-10-27 12:46:39.294  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/index
+2019-10-27 12:46:39.294  INFO 11624 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 12:48:34.211  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/logout
+2019-10-27 12:48:34.213  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 12:48:34.233  INFO 11624 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:42:43.080  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3176 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 15:42:43.112 DEBUG 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 15:42:43.113  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 15:42:43.443  INFO 3176 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 15:42:43.443  INFO 3176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 15:42:43.443  INFO 3176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 15:42:50.786  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 15:42:51.442  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 493ms. Found 2 repository interfaces.
+2019-10-27 15:42:53.348  INFO 3176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 15:42:56.361  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 15:42:56.444  INFO 3176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 15:42:56.451  INFO 3176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 15:42:57.018  INFO 3176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 15:42:57.027  INFO 3176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13584 ms
+2019-10-27 15:42:58.837  INFO 3176 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 15:42:59.648  INFO 3176 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 15:43:01.991  INFO 3176 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 15:43:02.996  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 15:43:12.891  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 15:43:13.606  INFO 3176 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 15:43:53.663  INFO 3176 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 15:43:54.138  INFO 3176 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 15:43:54.181  INFO 3176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 15:44:02.687  WARN 3176 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 15:44:03.577  INFO 3176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 15:44:04.081  INFO 3176 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 15:44:26.326  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 15:44:26.459  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 107.355 seconds (JVM running for 112.21)
+2019-10-27 15:44:51.237  INFO 3176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 15:44:51.239  INFO 3176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 15:44:51.300  INFO 3176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 60 ms
+2019-10-27 15:44:51.547  INFO 3176 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/index
+2019-10-27 15:44:51.547  INFO 3176 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 15:47:11.888  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:47:13.325  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:47:13.392  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:47:18.357  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/%7Bid%7D/input
+2019-10-27 15:47:18.362  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:47:18.362  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:48:25.788  INFO 3176 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:48:25.793  INFO 3176 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:48:25.806  INFO 3176 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:48:28.693  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:48:28.694  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:48:28.832  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:48:45.469  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:48:48.916  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:48:48.964  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:48:49.028  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/admin/types
+2019-10-27 15:48:49.030  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:48:49.030  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:49:27.804  INFO 3176 --- [Thread-142] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 15:49:27.808  INFO 3176 --- [Thread-142] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 15:49:27.863  INFO 3176 --- [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-27 15:49:27.890  INFO 3176 --- [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-27 15:49:29.132  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3176 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 15:49:29.132 DEBUG 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 15:49:29.132  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 15:49:33.583  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 15:49:33.598  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 repository interfaces.
+2019-10-27 15:49:33.667  INFO 3176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 15:49:33.757  WARN 3176 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 15:49:34.952  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 15:49:34.952  INFO 3176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 15:49:34.952  INFO 3176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 15:49:35.185  INFO 3176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 15:49:35.196  INFO 3176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6064 ms
+2019-10-27 15:49:35.414  INFO 3176 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 15:49:35.429  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-27 15:49:35.694  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-27 15:49:35.694  INFO 3176 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 15:49:38.887  INFO 3176 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 15:49:38.902  INFO 3176 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 15:49:38.902  INFO 3176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 15:49:39.168  WARN 3176 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 15:49:39.309  INFO 3176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 15:49:39.355  INFO 3176 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 15:49:39.621  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 15:49:39.621  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 10.657 seconds (JVM running for 425.371)
+2019-10-27 15:49:39.621  INFO 3176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 15:49:44.243  INFO 3176 --- [Thread-206] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 15:49:44.243  INFO 3176 --- [Thread-206] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 15:49:44.243  INFO 3176 --- [Thread-206] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-27 15:49:44.259  INFO 3176 --- [Thread-206] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-10-27 15:49:45.399  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3176 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 15:49:45.399 DEBUG 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 15:49:45.399  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 15:49:45.735  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 15:49:45.750  INFO 3176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 repository interfaces.
+2019-10-27 15:49:45.844  INFO 3176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 15:49:45.953  WARN 3176 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 15:49:46.047  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 15:49:46.047  INFO 3176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 15:49:46.047  INFO 3176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 15:49:46.141  INFO 3176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 15:49:46.141  INFO 3176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 742 ms
+2019-10-27 15:49:46.287  INFO 3176 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 15:49:46.334  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-10-27 15:49:46.365  INFO 3176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-10-27 15:49:46.365  INFO 3176 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 15:49:47.299  INFO 3176 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 15:49:47.299  INFO 3176 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 15:49:47.315  INFO 3176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 15:49:47.658  WARN 3176 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 15:49:47.877  INFO 3176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 15:49:47.924  INFO 3176 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 15:49:48.174  INFO 3176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 15:49:48.174  INFO 3176 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 2.824 seconds (JVM running for 433.926)
+2019-10-27 15:49:48.174  INFO 3176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 15:50:01.114  INFO 3176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 15:50:01.120  INFO 3176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 15:50:01.154  INFO 3176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2019-10-27 15:50:02.896  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:50:02.896  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 15:50:14.240  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:50:14.281  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:50:14.489  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:50:18.953  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:50:18.954  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:50:19.020  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:50:34.393  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:50:35.437  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:50:35.467  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:50:35.475  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:50:35.481  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:50:35.497  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:04.154  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:51:04.155  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:04.173  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:18.873  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:20.208  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:20.210  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:20.232  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:20.243  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:20.262  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:22.184  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:51:22.184  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:22.243  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:35.395  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:35.994  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:35.995  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:36.007  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:36.013  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:36.026  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:38.457  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:51:38.457  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:38.469  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:50.175  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:50.610  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:50.611  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:50.625  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:51:50.732  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:50.745  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:51:53.387  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:51:53.388  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:51:53.398  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:00.343  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:00.743  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:00.743  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:00.751  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:00.830  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:00.842  INFO 3176 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:03.591  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:03.597  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:03.608  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:09.896  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:09.907  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:09.920  INFO 3176 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:22.600  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:52:22.601  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:22.610  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:39.178  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:39.690  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:39.691  INFO 3176 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:39.699  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:39.705  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:39.717  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:42.377  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:52:42.378  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:42.390  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:46.646  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:47.147  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:47.147  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:47.157  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:52:47.346  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:47.371  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:52:49.945  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:52:49.946  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:52:49.954  INFO 3176 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:13.650  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:14.038  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:14.039  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:14.046  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:14.052  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:14.060  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:18.102  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:18.107  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:18.118  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:23.408  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:23.418  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:23.430  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:31.713  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:31.722  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:31.733  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:33.456  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:53:33.456  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:33.467  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:43.118  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:43.497  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:43.499  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:43.518  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:43.527  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:43.540  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:46.663  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:46.671  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:46.680  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:49.275  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:49.283  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:49.305  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:50.938  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 15:53:50.939  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:50.950  INFO 3176 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:59.511  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:59.853  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:59.853  INFO 3176 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:53:59.861  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:53:59.867  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:53:59.877  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:54:02.431  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:54:02.441  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:54:02.449  INFO 3176 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:54:04.279  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:54:04.285  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:54:04.296  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:54:06.174  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:54:06.184  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:54:06.194  INFO 3176 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 15:54:07.711  INFO 3176 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 15:54:07.741  INFO 3176 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 15:54:07.749  INFO 3176 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:02:06.438  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 1508 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:02:06.610 DEBUG 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:02:06.610  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:02:07.327  INFO 1508 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 17:02:07.327  INFO 1508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 17:02:07.327  INFO 1508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 17:02:13.453  INFO 1508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:02:13.697  INFO 1508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 231ms. Found 2 repository interfaces.
+2019-10-27 17:02:14.921  INFO 1508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:02:16.566  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:02:16.613  INFO 1508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:02:16.613  INFO 1508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:02:16.847  INFO 1508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:02:16.847  INFO 1508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9519 ms
+2019-10-27 17:02:17.914  INFO 1508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:02:18.385  INFO 1508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 17:02:20.089  INFO 1508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 17:02:20.474  INFO 1508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 17:02:24.962  INFO 1508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 17:02:25.156  INFO 1508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:02:38.632  INFO 1508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:02:38.721  INFO 1508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:02:38.813  INFO 1508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:02:42.670  WARN 1508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:02:43.719  INFO 1508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:02:46.293  INFO 1508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:02:51.399  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:02:51.425  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 49.21 seconds (JVM running for 54.56)
+2019-10-27 17:03:18.715  INFO 1508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 17:03:18.716  INFO 1508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 17:03:18.741  INFO 1508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-10-27 17:03:19.012  INFO 1508 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:03:19.013  INFO 1508 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 17:04:26.234  INFO 1508 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:04:27.577  INFO 1508 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:04:27.763  INFO 1508 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:04:36.014  INFO 1508 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11/input
+2019-10-27 17:04:36.194  INFO 1508 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:04:36.248  INFO 1508 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:04:38.692  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 17:04:38.700  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:04:38.702  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:04:42.453  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11
+2019-10-27 17:04:42.457  WARN 1508 --- [http-nio-8080-exec-8] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 17:04:42.989  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:04:43.044  INFO 1508 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:05:30.205 ERROR 1508 --- [http-nio-8080-exec-10] c.x.b.e.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/admin/types/types, Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-27 17:05:30.293  WARN 1508 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-10-27 17:07:44.295 ERROR 1508 --- [http-nio-8080-exec-4] c.x.b.e.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/admin/types/types, Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-27 17:07:44.297  WARN 1508 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-10-27 17:07:51.811  INFO 1508 --- [Thread-76] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:07:51.811  INFO 1508 --- [Thread-76] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:07:51.905  INFO 1508 --- [Thread-76] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-27 17:07:51.951  INFO 1508 --- [Thread-76] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-27 17:07:53.729  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 1508 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:07:53.729 DEBUG 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:07:53.729  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:07:55.040  INFO 1508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:07:55.055  INFO 1508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 2 repository interfaces.
+2019-10-27 17:07:55.165  INFO 1508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:07:55.305  WARN 1508 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 17:07:55.446  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:07:55.446  INFO 1508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:07:55.446  INFO 1508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:07:55.508  INFO 1508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:07:55.508  INFO 1508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1771 ms
+2019-10-27 17:07:55.665  INFO 1508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:07:55.669  INFO 1508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-27 17:07:56.048  INFO 1508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-27 17:07:56.048  INFO 1508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:07:59.594  INFO 1508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:07:59.595  INFO 1508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:07:59.602  INFO 1508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:07:59.962  WARN 1508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:08:00.243  INFO 1508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:08:00.337  INFO 1508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:08:00.635  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:08:00.635  INFO 1508 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 7.226 seconds (JVM running for 363.777)
+2019-10-27 17:08:00.635  INFO 1508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 17:08:05.409  INFO 1508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 17:08:05.410  INFO 1508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 17:08:05.426  INFO 1508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-27 17:08:05.429  INFO 1508 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/types
+2019-10-27 17:08:05.429  INFO 1508 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 17:09:12.671  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:09:12.673  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:09:12.674  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:09:34.057  INFO 1508 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:09:34.090  INFO 1508 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:09:34.091  INFO 1508 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:11:06.071  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:11:06.075  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:11:06.075  INFO 1508 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:13:16.004  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3880 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:13:16.160 DEBUG 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:13:16.160  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:13:18.607  INFO 3880 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 17:13:18.608  INFO 3880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 17:13:18.608  INFO 3880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 17:13:22.734  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:13:23.051  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236ms. Found 2 repository interfaces.
+2019-10-27 17:13:23.944  INFO 3880 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:13:25.792  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:13:25.818  INFO 3880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:13:25.818  INFO 3880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:13:26.067  INFO 3880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:13:26.067  INFO 3880 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7459 ms
+2019-10-27 17:13:27.133  INFO 3880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:13:27.588  INFO 3880 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 17:13:29.809  INFO 3880 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 17:13:30.240  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 17:13:31.877  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 17:13:31.955  INFO 3880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:13:36.576  INFO 3880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:13:36.612  INFO 3880 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:13:36.644  INFO 3880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:13:38.336  WARN 3880 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:13:38.736  INFO 3880 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:13:38.892  INFO 3880 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:13:39.329  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:13:39.580  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 34.909 seconds (JVM running for 40.698)
+2019-10-27 17:13:48.067  INFO 3880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 17:13:48.068  INFO 3880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 17:13:48.097  INFO 3880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2019-10-27 17:13:48.612  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:13:48.614  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 17:14:17.891  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:14:18.079  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:14:18.171  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:14:22.623  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11/input
+2019-10-27 17:14:22.651  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:14:22.709  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:14:22.784  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 17:14:22.789  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:14:22.789  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:14:31.069  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11
+2019-10-27 17:14:31.076  WARN 3880 --- [http-nio-8080-exec-6] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 17:14:31.208  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:14:31.280  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:14:31.291  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:14:31.300  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:14:31.327  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:18:36.815  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:18:36.875  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:18:36.934  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:18:40.897  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11/input
+2019-10-27 17:18:40.947  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:18:40.980  INFO 3880 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:18:41.050  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 17:18:41.127  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:18:41.129  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:18:42.914  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11
+2019-10-27 17:18:42.915  WARN 3880 --- [http-nio-8080-exec-9] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 17:18:42.925  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:18:42.926  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:18:42.976  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:18:42.984  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:18:43.002  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:20:47.526  INFO 3880 --- [Thread-67] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:20:47.529  INFO 3880 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:20:47.678  INFO 3880 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-27 17:20:47.720  INFO 3880 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-27 17:20:49.671  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3880 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:20:49.672 DEBUG 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:20:49.672  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:20:51.778  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:20:51.794  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 2 repository interfaces.
+2019-10-27 17:20:51.863  INFO 3880 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:20:51.965  WARN 3880 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 17:20:52.354  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:20:52.354  INFO 3880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:20:52.355  INFO 3880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:20:52.643  INFO 3880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:20:52.643  INFO 3880 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2923 ms
+2019-10-27 17:20:52.809  INFO 3880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:20:52.816  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-27 17:20:53.671  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-27 17:20:53.672  INFO 3880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:20:58.980  INFO 3880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:20:58.981  INFO 3880 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:20:59.007  INFO 3880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:20:59.440  WARN 3880 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:20:59.733  INFO 3880 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:20:59.805  INFO 3880 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:21:00.330  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:21:00.331  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 11.202 seconds (JVM running for 481.448)
+2019-10-27 17:21:00.334  INFO 3880 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 17:21:06.436  INFO 3880 --- [Thread-81] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:21:06.438  INFO 3880 --- [Thread-81] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:21:06.440  INFO 3880 --- [Thread-81] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-27 17:21:06.458  INFO 3880 --- [Thread-81] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-10-27 17:21:08.380  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3880 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:21:08.381 DEBUG 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:21:08.381  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:21:08.613  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:21:08.626  INFO 3880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 repository interfaces.
+2019-10-27 17:21:08.724  INFO 3880 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:21:08.817  WARN 3880 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-27 17:21:08.884  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:21:08.885  INFO 3880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:21:08.885  INFO 3880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:21:09.079  INFO 3880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:21:09.079  INFO 3880 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 694 ms
+2019-10-27 17:21:09.157  INFO 3880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:21:09.161  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-10-27 17:21:09.326  INFO 3880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-10-27 17:21:09.326  INFO 3880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:21:10.345  INFO 3880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:21:10.346  INFO 3880 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:21:10.360  INFO 3880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:21:10.649  WARN 3880 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:21:10.812  INFO 3880 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:21:10.861  INFO 3880 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:21:11.195  INFO 3880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:21:11.196  INFO 3880 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 2.945 seconds (JVM running for 492.313)
+2019-10-27 17:21:11.197  INFO 3880 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-27 17:22:13.087  INFO 3880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 17:22:13.090  INFO 3880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 17:22:13.113  INFO 3880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-10-27 17:22:13.114  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:22:13.114  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 17:22:24.930  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:22:25.557  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:26.156  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:30.472  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 17:22:30.473  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:30.507  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:35.476  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:22:35.495  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:35.512  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:48.055  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:22:48.067  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:48.079  INFO 3880 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:54.262  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11/input
+2019-10-27 17:22:54.270  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:54.286  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:54.388  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 17:22:54.391  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:54.391  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:22:56.995  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11
+2019-10-27 17:22:56.996  WARN 3880 --- [http-nio-8080-exec-5] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 17:22:57.001  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:22:57.013  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:23:15.424  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11
+2019-10-27 17:23:15.425  WARN 3880 --- [http-nio-8080-exec-10] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 17:23:17.281  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:23:17.307  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:23:17.316  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:23:17.324  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:23:17.339  INFO 3880 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:23:59.342  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/11/delete
+2019-10-27 17:24:01.214  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:01.218  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:24:01.415  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:24:01.424  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:01.442  INFO 3880 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:24:07.346  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:24:07.355  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:07.373  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:24:11.928  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:24:11.939  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:11.949  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:24:43.646  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/10/input
+2019-10-27 17:24:43.652  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:43.669  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:24:43.962  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 17:24:43.964  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:24:43.966  INFO 3880 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:25:17.171  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types/input
+2019-10-27 17:25:17.173  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:25:17.195  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:25:32.039  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:25:33.310  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:25:33.459  INFO 3880 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:25:33.481  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:25:33.495  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:25:33.512  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:25:46.669  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:25:46.677  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:25:46.819  INFO 3880 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:25:55.643  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:25:55.650  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:25:55.666  INFO 3880 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:26:07.961  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:26:07.972  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:26:08.024  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:26:22.648  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/types
+2019-10-27 17:26:22.659  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:26:22.669  INFO 3880 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:26:36.097  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-10-27 17:26:36.099  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:26:36.100  INFO 3880 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:55:51.750  INFO 3244 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 3244 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 17:55:51.778 DEBUG 3244 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 17:55:51.779  INFO 3244 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 17:55:52.225  INFO 3244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 17:55:52.225  INFO 3244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 17:55:52.225  INFO 3244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 17:56:00.835  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 17:56:01.979  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 853ms. Found 3 repository interfaces.
+2019-10-27 17:56:06.288  INFO 3244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 17:56:13.179  INFO 3244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 17:56:13.413  INFO 3244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 17:56:13.429  INFO 3244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 17:56:14.598  INFO 3244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 17:56:14.598  INFO 3244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 22373 ms
+2019-10-27 17:56:17.888  INFO 3244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 17:56:19.348  INFO 3244 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 17:56:23.885  INFO 3244 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 17:56:25.204  INFO 3244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 17:56:29.351  INFO 3244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 17:56:29.870  INFO 3244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 17:56:39.556  INFO 3244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 17:56:39.580  INFO 3244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 17:56:39.627  INFO 3244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 17:56:48.520  WARN 3244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 17:56:49.844  INFO 3244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 17:56:50.328  INFO 3244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 17:56:55.774  INFO 3244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 17:56:55.812  INFO 3244 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 66.563 seconds (JVM running for 70.085)
+2019-10-27 17:58:10.124  INFO 3244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 17:58:10.125  INFO 3244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 17:58:10.160  INFO 3244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2019-10-27 17:58:10.325  INFO 3244 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/blogs
+2019-10-27 17:58:10.327  INFO 3244 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 17:59:09.927  INFO 3244 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 17:59:10.910  INFO 3244 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:59:10.995  INFO 3244 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:59:16.720  INFO 3244 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 17:59:16.721  INFO 3244 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:59:16.778  INFO 3244 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:59:39.073  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 17:59:40.591  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:59:40.655  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 17:59:40.673  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 17:59:40.679  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 17:59:40.708  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:00:13.882  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:00:13.891  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:00:13.907  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:06.190  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:01:06.199  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:06.845  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:15.959  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:01:15.960  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:16.016  INFO 3244 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:33.378  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:01:33.855  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:33.857  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:33.866  INFO 3244 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:01:33.875  INFO 3244 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:33.955  INFO 3244 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:45.749  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/14/input
+2019-10-27 18:01:45.936  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:45.946  INFO 3244 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:01:46.430  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 18:01:46.435  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:01:46.436  INFO 3244 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:06:18.391  INFO 9912 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 9912 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 18:06:18.407 DEBUG 9912 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 18:06:18.407  INFO 9912 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 18:06:18.485  INFO 9912 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 18:06:18.485  INFO 9912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 18:06:18.485  INFO 9912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 18:06:19.848  INFO 9912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 18:06:19.973  INFO 9912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112ms. Found 3 repository interfaces.
+2019-10-27 18:06:20.489  INFO 9912 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 18:06:22.004  INFO 9912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 18:06:22.051  INFO 9912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 18:06:22.051  INFO 9912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 18:06:22.394  INFO 9912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 18:06:22.394  INFO 9912 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3909 ms
+2019-10-27 18:06:23.207  INFO 9912 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 18:06:23.738  INFO 9912 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 18:06:25.755  INFO 9912 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 18:06:26.177  INFO 9912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 18:06:27.629  INFO 9912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 18:06:27.754  INFO 9912 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 18:06:38.656  INFO 9912 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 18:06:38.672  INFO 9912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 18:06:38.726  INFO 9912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 18:06:40.093  WARN 9912 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 18:06:40.603  INFO 9912 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 18:06:40.857  INFO 9912 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 18:06:42.251  INFO 9912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 18:06:42.298  INFO 9912 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 25.722 seconds (JVM running for 29.593)
+2019-10-27 18:06:57.870  INFO 9912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 18:06:57.870  INFO 9912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 18:06:57.889  INFO 9912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-10-27 18:06:57.933  INFO 9912 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/14/input
+2019-10-27 18:06:57.933  INFO 9912 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 18:07:40.105  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:07:40.211  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:07:40.292  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:07:54.254  INFO 9912 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:07:54.255  INFO 9912 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:07:54.431  INFO 9912 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:08:12.430  INFO 9912 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:08:12.771  INFO 9912 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:08:12.794  INFO 9912 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:08:41.043  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:08:41.847  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:08:41.907  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:08:41.938  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:08:41.945  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:08:41.969  INFO 9912 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:08:58.731  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/15/input
+2019-10-27 18:08:58.793  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:08:58.813  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:08:59.156  INFO 9912 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 18:08:59.159  INFO 9912 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:08:59.160  INFO 9912 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:09:16.271  INFO 9912 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/15
+2019-10-27 18:09:16.274  WARN 9912 --- [http-nio-8080-exec-8] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 18:09:16.278  INFO 9912 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:09:16.294  INFO 9912 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:09:50.611  INFO 9912 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/15
+2019-10-27 18:09:50.612  WARN 9912 --- [http-nio-8080-exec-7] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 18:09:51.077  INFO 9912 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:09:51.082  INFO 9912 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:09:51.102  INFO 9912 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:09:51.108  INFO 9912 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:09:51.120  INFO 9912 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:10:09.521  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:10:09.522  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:10:09.535  INFO 9912 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:10:58.433  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:10:58.434  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:10:58.444  INFO 9912 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:13:39.653  INFO 1392 --- [restartedMain] com.xxh.blog.BlogApplication             : Starting BlogApplication on DESKTOP-94S3CC0 with PID 1392 (E:\myBlog\target\classes started by XXH in E:\myBlog)
+2019-10-27 18:13:39.731 DEBUG 1392 --- [restartedMain] com.xxh.blog.BlogApplication             : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-10-27 18:13:39.731  INFO 1392 --- [restartedMain] com.xxh.blog.BlogApplication             : The following profiles are active: dev
+2019-10-27 18:13:39.825  INFO 1392 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\XXH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/XXH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-10-27 18:13:39.825  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-27 18:13:39.825  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-27 18:13:41.199  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-27 18:13:41.309  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 3 repository interfaces.
+2019-10-27 18:13:41.708  INFO 1392 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-27 18:13:42.272  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-27 18:13:42.287  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-27 18:13:42.287  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-27 18:13:42.381  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-27 18:13:42.381  INFO 1392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2556 ms
+2019-10-27 18:13:42.663  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-27 18:13:42.710  INFO 1392 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-27 18:13:42.945  INFO 1392 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-27 18:13:43.054  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-27 18:13:43.913  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-27 18:13:43.944  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-10-27 18:13:45.350  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-27 18:13:45.350  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-27 18:13:45.397  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-27 18:13:46.100  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-27 18:13:46.334  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-27 18:13:46.459  INFO 1392 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-27 18:13:46.803  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-27 18:13:46.803  INFO 1392 --- [restartedMain] com.xxh.blog.BlogApplication             : Started BlogApplication in 8.509 seconds (JVM running for 10.243)
+2019-10-27 18:13:51.188  INFO 1392 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-27 18:13:51.188  INFO 1392 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-27 18:13:51.463  INFO 1392 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 275 ms
+2019-10-27 18:13:51.483  INFO 1392 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:13:51.484  INFO 1392 --- [http-nio-8080-exec-2] c.xxh.blog.Interceptor.LoginInterceptor  : 请先登录
+2019-10-27 18:14:39.984  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:14:40.084  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:14:40.143  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:14:55.070  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/15/input
+2019-10-27 18:14:55.098  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:14:55.156  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:14:55.518  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 18:14:55.521  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:14:55.521  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:15:16.649  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/15
+2019-10-27 18:15:16.653  WARN 1392 --- [http-nio-8080-exec-9] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 18:15:17.281  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:15:17.304  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:15:17.315  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:15:17.367  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:15:17.382  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:15:33.379  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/14/delete
+2019-10-27 18:15:33.923  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:15:33.924  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:15:33.940  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:15:33.949  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:15:33.972  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:15:46.951  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:15:46.953  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:15:46.974  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:16:11.222  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:16:11.776  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:16:11.780  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:16:11.792  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:16:11.798  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:16:11.814  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:16:27.553  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:16:27.554  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:16:27.565  INFO 1392 --- [http-nio-8080-exec-3] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:17:10.559  INFO 1392 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:17:11.037  INFO 1392 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:17:11.038  INFO 1392 --- [http-nio-8080-exec-5] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:17:11.049  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:17:11.113  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:17:11.126  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:17:28.006  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:17:28.008  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:17:28.024  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:17:33.830  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:17:33.839  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:17:33.854  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:01.584  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:01.862  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:01.863  INFO 1392 --- [http-nio-8080-exec-8] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:01.875  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:01.932  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:01.947  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:04.679  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/input
+2019-10-27 18:18:04.680  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:04.692  INFO 1392 --- [http-nio-8080-exec-6] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:09.512  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:10.050  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:10.051  INFO 1392 --- [http-nio-8080-exec-9] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:10.062  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:10.071  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:10.085  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:13.018  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:13.028  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:13.038  INFO 1392 --- [http-nio-8080-exec-1] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:18.103  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:18.111  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:18.125  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:21.009  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/17/input
+2019-10-27 18:18:21.016  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:21.029  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:21.200  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/static/images/name.jpg
+2019-10-27 18:18:21.214  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:21.215  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:29.016  INFO 1392 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags/17
+2019-10-27 18:18:29.017  WARN 1392 --- [http-nio-8080-exec-4] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2019-10-27 18:18:29.221  INFO 1392 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:29.221  INFO 1392 --- [http-nio-8080-exec-4] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:29.229  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/tags
+2019-10-27 18:18:29.235  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:29.246  INFO 1392 --- [http-nio-8080-exec-10] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
+2019-10-27 18:18:36.305  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : /admin/logout
+2019-10-27 18:18:36.306  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : postHandle...
+2019-10-27 18:18:36.309  INFO 1392 --- [http-nio-8080-exec-7] c.xxh.blog.Interceptor.LoginInterceptor  : afterCompletion...
